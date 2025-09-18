@@ -1,3 +1,6 @@
+from sys import float_repr_style
+
+
 def environnement_optimal(temp, poussiere, humidite):
     """
     Vérifie si l'environnement d'un ordinateur est optimal.
@@ -43,9 +46,24 @@ def environnement_optimal(temp, poussiere, humidite):
 
 
 if __name__ == "__main__":
+    #TODO : Créer 3 listes
+    liste_ordi1 = ["1", "2", "3"]
+    liste_ordi2 = []
+    liste_ordi3 = []
 
-    temp = int(input("Entrer la température : "))
+    #TODO : pour 3 ordinateurs
+        #TODO : Demander temp, poussiere, humidite
+        #TODO : Mettre 3 valeurs dans leurs listes
+    temp = float(input("Entrer la température : "))
     poussiere = input("Enter le niveau de poussière : ")
     humidite = float(input("Entrer l'humidité : "))
+
+    liste_ordi1.append(temp)
+    liste_ordi2.append(poussiere)
+    liste_ordi3.append(humidite)
+
+
+    #TODO : Pour les 3 ordis
+        #TODO : utiliser la fonction et afficher le résultat
     print(environnement_optimal(temp, poussiere, humidite))
 
