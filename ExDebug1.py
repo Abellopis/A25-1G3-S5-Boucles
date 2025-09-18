@@ -24,7 +24,7 @@ def environnement_optimal(temp, poussiere, humidite):
 
     # Vérification humidité
     if humidite <= 30:
-        print("Humidité trop basse")
+        print("Humidité basse")
         alerte = True
     elif humidite >= 50:
         print("Humidité trop élevée")
